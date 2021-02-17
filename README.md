@@ -12,3 +12,7 @@ CODE 5
 SELECT sum(life_expectancy) FROM `bigquery-public-data.census_bureau_international.mortality_life_expectancy` LIMIT 5
 CODE 6
 SELECT COUNT(life_expectancy) FROM `bigquery-public-data.census_bureau_international.mortality_life_expectancy` LIMIT 5
+CODE 7
+SELECT SUM(life_expectancy) FROM `bigquery-public-data.census_bureau_international.mortality_life_expectancy` 
+WHERE year > 1981
+LIMIT 5
