@@ -13,10 +13,14 @@ SELECT sum(life_expectancy) FROM `bigquery-public-data.census_bureau_internation
 CODE 6
 SELECT COUNT(life_expectancy) FROM `bigquery-public-data.census_bureau_international.mortality_life_expectancy` LIMIT 5
 CODE 7
+SELECT MIN(life_expectancy_male) FROM `bigquery-public-data.census_bureau_international.mortality_life_expectancy` LIMIT 1000
+CODE 8
+
+CODE 9
 SELECT SUM(life_expectancy) FROM `bigquery-public-data.census_bureau_international.mortality_life_expectancy` 
 WHERE year > 1981
 LIMIT 5
-CODE 8
+CODE 10
 SELECT year as YR, infant_mortality as IM,  FROM`bigquery-public-data.census_bureau_international.mortality_life_expectancy`
 WHERE year > 1981
 ORDER BY YR
