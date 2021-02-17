@@ -6,3 +6,7 @@ CODE NO.2
 SELECT year as year FROM `bigquery-public-data.census_bureau_international.mortality_life_expectancy` LIMIT 5
 CODE 3
 SELECT avg(infant_mortality) FROM `bigquery-public-data.census_bureau_international.mortality_life_expectancy` LIMIT 5
+CODE 4
+SELECT max(mortality_rate_1to4) FROM `bigquery-public-data.census_bureau_international.mortality_life_expectancy` LIMIT 5
+CODE 5
+SELECT sum(life_expectancy) FROM `bigquery-public-data.census_bureau_international.mortality_life_expectancy` LIMIT 5
