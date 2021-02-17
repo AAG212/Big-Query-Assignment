@@ -15,7 +15,7 @@ SELECT COUNT(life_expectancy) FROM `bigquery-public-data.census_bureau_internati
 CODE 7
 SELECT MIN(life_expectancy_male) FROM `bigquery-public-data.census_bureau_international.mortality_life_expectancy` LIMIT 1000
 CODE 8
-
+SELECT MAX(life_expectancy_male) FROM `bigquery-public-data.census_bureau_international.mortality_life_expectancy` LIMIT 1000
 CODE 9
 SELECT SUM(life_expectancy) FROM `bigquery-public-data.census_bureau_international.mortality_life_expectancy` 
 WHERE year > 1981
