@@ -16,3 +16,8 @@ CODE 7
 SELECT SUM(life_expectancy) FROM `bigquery-public-data.census_bureau_international.mortality_life_expectancy` 
 WHERE year > 1981
 LIMIT 5
+CODE 8
+SELECT year as YR, infant_mortality as IM,  FROM`bigquery-public-data.census_bureau_international.mortality_life_expectancy`
+WHERE year > 1981
+ORDER BY YR
+LIMIT 5
